@@ -1,0 +1,541 @@
+<! DOCTYPE html>
+<html>
+<head>
+    <title>
+        Meghan Trainor Trivia
+    </title>
+
+    <style>
+        .homepage_header {
+            /*This will style the "Top 10 Meghan Trainor Songs"*/
+            font-family: 'Copperplate Gothic';
+            font-size: 50px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+    </style>
+
+    <style>
+        .navbar {
+            /*This will style the navbar*/
+            background-color: black;
+            font-family: 'Maiandra GD';
+            text-align: center;
+        }
+
+        .navdiv {
+            align-items: center;
+        }
+
+        li a {
+            color: white;
+        }
+
+        li {
+            list-style: none;
+            display: inline-block;
+            font-size: 30px;
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            align-items: center;
+        }
+    </style>
+
+    <style>
+        /*This will style the header*/
+        .quiz_header {
+            font-family: 'Copperplate Gothic';
+            font-size: 30px;
+            margin: 0px;
+        }
+    </style>
+    <style>
+        /*This will style the format of the questions and answers*/
+        .master_questions {
+            width: 75%;
+            margin-left: auto;
+            margin-right: auto;
+            border: solid;
+            border-color: black;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+
+    <style>
+        /*This will style the questions*/
+        .question {
+            font-family: Candara;
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+    </style>
+
+    <style>
+        /*This will style the answers*/
+        .single_answers {
+            font-family: Candara;
+            width: 200px;
+            font-size: 18px;
+            border: solid;
+            border-color: black;
+            border-radius: 10px;
+            padding: 3px;
+            margin: 2px;
+        }
+    </style>
+
+    <style>
+        /*This will style the answer 1*/
+        .ra1 {
+            font-family: Candara;
+            font-size: 18px;
+            width: 350px;
+            border: solid;
+            border-color: black;
+            border-radius: 10px;
+            margin: 10px;
+            padding-left: 30px;
+            padding-right: 30px;
+            margin-top: 20px;
+        }
+
+        .ra1::after {
+            content: "ANSWER (HOVER)";
+            }
+
+        .ra1:hover::after {
+            content: "December 22, 1993";
+        }
+    </style>
+
+    <style>
+        /*This will style the answer 2*/
+        .ra2 {
+            font-family: Candara;
+            font-size: 18px;
+            width: 350px;
+            border: solid;
+            border-color: black;
+            border-radius: 10px;
+            margin: 10px;
+            padding-left: 30px;
+            padding-right: 30px;
+            margin-top: 20px;
+        }
+
+        .ra2::after {
+            content: "ANSWER (HOVER)";
+        }
+
+        .ra2:hover::after {
+            content: "5";
+        }
+    </style>
+
+    <style>
+        /*This will style the answer 3*/
+        .ra3 {
+            font-family: Candara;
+            font-size: 18px;
+            width: 350px;
+            border: solid;
+            border-color: black;
+            border-radius: 10px;
+            margin: 10px;
+            padding-left: 30px;
+            padding-right: 30px;
+            margin-top: 20px;
+        }
+
+        .ra3::after {
+            content: "ANSWER (HOVER)";
+        }
+
+        .ra3:hover::after {
+            content: "Riley";
+        }
+    </style>
+
+    <style>
+        /*This will style the answer 4*/
+        .ra4 {
+            font-family: Candara;
+            font-size: 18px;
+            width: 350px;
+            border: solid;
+            border-color: black;
+            border-radius: 10px;
+            margin: 10px;
+            padding-left: 30px;
+            padding-right: 30px;
+            margin-top: 20px;
+        }
+
+        .ra4::after {
+            content: "ANSWER (HOVER)";
+        }
+
+        .ra4:hover::after {
+            content: "Treat Myself";
+        }
+    </style>
+
+    <style>
+        /*This will style the answer 5*/
+        .ra5 {
+            font-family: Candara;
+            font-size: 18px;
+            width: 350px;
+            border: solid;
+            border-color: black;
+            border-radius: 10px;
+            margin: 10px;
+            padding-left: 30px;
+            padding-right: 30px;
+            margin-top: 20px;
+        }
+
+        .ra5::after {
+            content: "ANSWER (HOVER)";
+        }
+
+        .ra5:hover::after {
+            content: "Nantucket, Massachusetts";
+        }
+    </style>
+
+    <style>
+        /*This will style the answer 6*/
+        .ra6 {
+            font-family: Candara;
+            font-size: 18px;
+            width: 350px;
+            border: solid;
+            border-color: black;
+            border-radius: 10px;
+            margin: 10px;
+            padding-left: 30px;
+            padding-right: 30px;
+            margin-top: 20px;
+        }
+
+        .ra6::after {
+            content: "ANSWER (HOVER)";
+        }
+
+        .ra6:hover::after {
+            content: "30 minutes";
+        }
+    </style>
+
+    <style>
+        /*This will style the answer 7*/
+        .ra7 {
+            font-family: Candara;
+            font-size: 18px;
+            width: 350px;
+            border: solid;
+            border-color: black;
+            border-radius: 10px;
+            margin: 10px;
+            padding-left: 30px;
+            padding-right: 30px;
+            margin-top: 20px;
+        }
+
+        .ra7::after {
+            content: "ANSWER (HOVER)";
+        }
+
+        .ra7:hover::after {
+            content: "Workin' On It";
+        }
+    </style>
+
+    <style>
+        /*This will style the answer 8*/
+        .ra8 {
+            font-family: Candara;
+            font-size: 18px;
+            width: 350px;
+            border: solid;
+            border-color: black;
+            border-radius: 10px;
+            margin: 10px;
+            padding-left: 30px;
+            padding-right: 30px;
+            margin-top: 20px;
+        }
+
+        .ra8::after {
+            content: "ANSWER (HOVER)";
+        }
+
+        .ra8:hover::after {
+            content: "Kelly Clarkson";
+        }
+    </style>
+</head>
+<body>
+    <!--This will show the header across the website-->
+    <p class="homepage_header">
+        Top 10 Meghan Trainor Songs
+    </p>
+
+    <!--This will make the navbar-->
+    <nav class="navdiv">
+        <div class="navbar">
+            <ul>
+                <li><a href="homepage.html"> Home </a></li>
+                <li><a href="bio.html"> Bio </a></li>
+                <li><a href="socials.html"> Socials </a></li>
+                <li><a href="trivia.html"> Trivia </a></li>
+                <li><a href="quotes.html"> Quotes </a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--This will make all the question-->
+    <div class="master_questions">
+        <h1 class="quiz_header">
+            How Well Do You Know Meghan Trainor?
+        </h1>
+
+        <p class="question">
+            1. When was Meghan Trainor born
+        </p>
+
+        <h2 class="answers">
+            <a class="single_answers">
+                December 22, 1992
+            </a>
+            <br />
+            <br />
+            <a class="single_answers">
+                September 22, 1992
+            </a>
+            <br />
+            <br />
+            <a class="single_answers">
+                December 22, 1993
+            </a>
+            <br />
+            <br />
+            <a class="single_answers">
+                September 22, 1993
+            </a>
+            <br />
+            <button class="ra1"></button>
+        </h2>
+
+        <br />
+
+        <p class="question">
+            2. How many studio albums has Meghan Trainor Released
+        </p>
+
+        <h2 class="answers">
+            <a class="single_answers">
+                5
+            </a>
+            <br />
+            <br />
+            <a class="single_answers">
+                6
+            </a>
+            <br />
+            <br />
+            <a class="single_answers">
+                7
+            </a>
+            <br />
+            <br />
+            <a class="single_answers">
+                8
+            </a>
+            <br />
+            <button class="ra2"></button>
+        </h2>
+
+        <br />
+
+        <p class="question">
+            3. What is the name of Meghan Trainor's first born child?
+        </p>
+
+        <h2 class="answers">
+            <a class="single_answers">
+                Kaley
+            </a>
+            <br />
+            <br />
+            <a class="single_answers">
+                Riley
+            </a>
+            <br />
+            <br />
+            <a class="single_answers">
+                Miley
+            </a>
+            <br />
+            <br />
+            <a class="single_answers">
+                Bryce
+            </a>
+            <br />
+            <button class="ra3"></button>
+        </h2>
+
+        <br />
+
+        <p class="question">
+            4. What is the name of Meghan Trainor's third studio album?
+        </p>
+
+        <h2 class="answers">
+            <a class="single_answers">
+                Treat Myself
+            </a>
+            <br />
+            <br />
+            <a class="single_answers">
+                Thank You
+            </a>
+            <br />
+            <br />
+            <a class="single_answers">
+                The Love Train
+            </a>
+            <br />
+            <br />
+            <a class="single_answers">
+                A Very Trainor Christmas
+            </a>
+            <br />
+            <button class="ra4"></button>
+        </h2>
+
+        <br />
+
+        <p class="question">
+            5. Where was Meghan Trainor born?
+        </p>
+
+        <h2 class="answers">
+            <a class="single_answers">
+                North Eastham, Massachusetts
+            </a>
+            <br />
+            <br />
+            <a class="single_answers">
+                Nashville, Tennessee
+            </a>
+            <br />
+            <br />
+            <a class="single_answers">
+                Orleans, Massachusetts
+            </a>
+            <br />
+            <br />
+            <a class="single_answers">
+                Nantucket, Massachusetts
+            </a>
+            <br />
+            <button class="ra5"></button>
+        </h2>
+
+        <br />
+
+        <p class="question">
+            6. How long did it take Meghan Trainor to write All About That Bass?
+        </p>
+
+        <h2 class="answers">
+            <a class="single_answers">
+                1 hour
+            </a>
+            <br />
+            <br />
+            <a class="single_answers">
+                30 minutes
+            </a>
+            <br />
+            <br />
+            <a class="single_answers">
+                2 hours
+            </a>
+            <br />
+            <br />
+            <a class="single_answers">
+                1 day
+            </a>
+            <br />
+            <button class="ra6"></button>
+        </h2>
+
+        <br />
+
+        <p class="question">
+            7. What is the name of Meghan Trainor's podcast
+        </p>
+
+        <h2 class="question">
+            <a class="single_answers">
+                Talkin' With Your Trainor
+            </a>
+            <br />
+            <br />
+            <a class="single_answers">
+                Weekly Dose Of Meghan
+            </a>
+            <br />
+            <br />
+            <a class="single_answers">
+                Workin' On It
+            </a>
+            <br />
+            <br />
+            <a class="single_answers">
+                She does not have a podcast
+            </a>
+            <br />
+            <button class="ra7"></button>
+        </h2>
+
+        <br />
+
+        <p class="question">
+            8. Who has not been featured in a Meghan Trainor song?
+        </p>
+
+        <h2 class="answers">
+            <a class="single_answers">
+                Kelly Clarkson
+            </a>
+            <br />
+            <br />
+            <a class="single_answers">
+                John Legend
+            </a>
+            <br />
+            <br />
+            <a class="single_answers">
+                Teddy Swims
+            </a>
+            <br />
+            <br />
+            <a class="single_answers">
+                Nicki Minaj
+            </a>
+            <br />
+            <button class="ra8"></button>
+        </h2>
+    </div>
+</body>
+</html>
